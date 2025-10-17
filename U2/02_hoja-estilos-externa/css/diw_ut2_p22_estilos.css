@@ -1,0 +1,65 @@
+body {
+    font-family: Georgia, serif; /* La diferencia que veo es que se cambia la fuente de texto en toda la página */
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+main {
+    padding: 1rem 2rem;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    color: #1565c0;
+    border-bottom: 2px solid #1565c0;
+}
+
+ul {
+    list-style-type: circle;
+    margin: 0;
+}
+
+li {
+    margin: 0.5rem 0;
+}
+
+footer {
+    text-align: center;
+    background-color: #e3f2fd;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.tarjeta {
+    border: black 2px solid;
+    padding: 50px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.subtitulo {
+    font-style: italic;
+    color: #bbdefb;
+}
+
+.boton {
+    background-color: #4285F4;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    border-radius: 8px;
+}
