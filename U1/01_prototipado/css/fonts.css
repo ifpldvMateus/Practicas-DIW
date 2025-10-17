@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Incluir los demás (italic, bold) cuando los necesitemos: https://gitlab.com/aao-fyi/vendor-fonts/-/tree/main/Poppins */
+/* Para enlazar sin necesidad de descarga: <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> */

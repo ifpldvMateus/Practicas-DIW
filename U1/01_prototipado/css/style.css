@@ -1,0 +1,47 @@
+:root {
+    --bs-body-bg: #04141c;
+    --bs-primary: #a3d3ff;
+    --bs-secondary: #42b9fc; /* Color especial */
+    --bs-big-text: #00affa; /* Variable propia. Color para títulos y textos grandes */
+}
+
+body {
+    font-family: 'Poppins';
+    background-color: var(--bs-body-bg);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--bs-secondary);
+    transition: color 0.3s ease;
+    white-space: nowrap; /* Evitar que el texto se parta si la pantalla es muy pequeña */
+}
+
+nav a:hover {
+    filter: brightness(85%); /* Oscurecer, sin usar un color suelto fijo */
+}
+
+nav img {
+    width: 30px;
+    height: 30px;
+    /* display: block; */ /* Para ajustar img con las dimensiones de "a" y evitar un desajuste invisible */ /* Ahora innecesario, porque creo que la clase col-auto fuerza esta propiedad. Si lo vuelo a necesitar, usar la clase d-block en img*/
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+nav img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+main h1 {
+    color: var(--bs-big-text);
+}
+
+main p {
+    color: var(--bs-primary);
+}
+
+main .highlight {
+    color: var(--bs-secondary);
+}
