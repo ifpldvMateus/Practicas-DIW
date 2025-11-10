@@ -1,0 +1,315 @@
+/* ===== Variables, reset y utilidades ===== */
+:root{
+    --bg:#0b1220;
+    --panel:#0f172a;
+    --muted:#94a3b8;
+    --text:#e5e7eb;
+    --brand:#38bdf8;
+    --accent:#22d3ee;
+    --border:#243043;
+    --shadow: rgba(0, 0, 0, .35);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: min(1100px, 90%);
+    margin-inline: auto;
+}
+
+/* ===== Header + Navbar ===== */
+.site-header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: linear-gradient(0deg, rgba(255, 255, 255, .02), rgba(255, 255, 255, .04));
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--border);
+    padding: .75rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    font-weight: 800;
+    letter-spacing: .2px;
+}
+
+.brand span {
+    color: var(--accent);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.nav-toggle {
+    display: none;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: .4rem .6rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 8px;
+}
+.nav-list a {
+    display: block;
+    padding: .5rem .9rem;
+    border-radius: 8px;
+    transition: background .2s ease;
+}
+
+.nav-list a:hover, .nav-list a:focus-visible {
+    background: rgba(255, 255, 255, .08);
+}
+
+.nav-list.open {
+    display: flex;
+}
+
+/* ===== Dropdowns ===== */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 0; top: calc(100% + 6px);
+    min-width: 220px;
+    background: var(--panel);
+    border :1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px var(--shadow);
+    opacity:0; visibility:hidden; transform: translateY(-6px);
+    transition: all .18s ease;
+    padding:.4rem 0;
+    z-index: 99;
+}
+
+.dropdown:hover > .dropdown-menu, .dropdown:focus-within > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    list-style:none;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: .5rem 1rem;
+    border-radius: 6px;
+}
+.dropdown-menu a:hover, .dropdown-menu a:focus-visible {
+    background: rgba(255, 255, 255, .08);
+}
+
+/* ===== Submenú lateral (Categorías dentro de Productos) ===== */
+.dropdown-right {
+    position: relative;
+}
+
+.dropdown-right > .dropbtn::after {
+    margin-left: .25rem;
+}
+
+.dropdown-right > .dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: 8px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px var(--shadow);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6px);
+    transition: all .18s ease;
+    min-width: 180px;
+    padding: .4rem 0;
+    z-index: 100;
+}
+
+.dropdown-right:hover > .dropdown-menu, .dropdown-right:focus-within > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-right .dropdown-menu a {
+    padding: .5rem 1rem;
+    display: block;
+    border-radius: 6px;
+}
+
+.dropdown-right .dropdown-menu a:hover, .dropdown-right .dropdown-menu a:focus-visible {
+    background: rgba(255, 255, 255, .08);
+}
+
+/* ===== Responsive navbar ===== */
+@media (max-width: 768px){
+    .nav-list { 
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        background: var(--panel);
+        border-top: 1px solid var(--border);
+        padding: .5rem 0;
+    }
+    
+    .nav-list.open {
+        display: flex;
+    }
+    
+    .nav-toggle {
+        display: inline-flex;
+    }
+
+    .dropbtn::after {
+        content: "▾";
+        margin-left: .25rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .nav-toggle {
+        display: none;
+    }
+}
+
+/* ===== Cards / layout ===== */
+.lead {
+    color: var(--muted);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.demo-box {
+    background: rgba(255, 255, 255, .03);
+    border: 1px dashed var(--border);
+    border-radius: 12px;
+    padding: 16px;
+    margin-block: 16px;
+}
+
+.tall {
+    height: 50vh;
+}
+
+/* ===== Counters ===== */
+main{
+    counter-reset: seccion;
+}
+
+h2{
+    counter-increment: seccion;
+    position: relative;
+    padding-left: 2rem;
+}
+
+h2::before{
+    content: counter(seccion) ". ";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+/* TOC y Steps con counters anidados */
+.toc{
+    counter-reset: item;
+    padding-left: 1rem;
+}
+
+.toc > li{
+    counter-increment: item;
+    list-style: none;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.toc > li::before{
+    content: counter(item) ". ";
+    position: absolute;
+    left: 0;
+    color: var(--brand);
+}
+
+.steps-list {
+    counter-reset: paso;
+    padding-left:1rem;
+}
+
+.steps-list > li{
+    counter-increment: paso;
+    list-style: none;
+    margin-bottom: .5rem;
+    position: relative;
+    padding-left: 2rem;
+}
+.steps-list > li::before{
+    content: counter(paso);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--brand);
+    color: var(--panel);
+    font-weight: bold;
+    border-radius: 50%;
+    width: 1.4rem;
+    height: 1.4rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== Focus & accesibilidad ===== */
+a:focus-visible, button:focus-visible {
+    outline: 3px solid #60a5fa;
+    outline-offset: 3px;
+}
