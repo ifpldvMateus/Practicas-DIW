@@ -1,0 +1,26 @@
+.card {
+    width: 140px;
+    height: 70px;
+    display: grid;
+    place-items: center;
+    margin: 12px 0;
+    background: #f9fafb;
+}
+
+.card.a {
+    border-width: 1px;
+    border-style: groove;
+    border-color: red;
+}
+
+.card.b {
+    border-width: 6px;
+    border-style: dashed;
+    border-color: green;
+}
+
+.card.c {
+    border-width: 10px;
+    border-style: double;
+    border-color: blue;
+}

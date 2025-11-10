@@ -1,0 +1,18 @@
+body {
+    display: grid;
+}
+
+.p1 {
+    margin-bottom: 30px;
+    background: #eef;
+}
+
+.p2 {
+    /*display: flow-root; */ /* Nota: yo no veo que esto rompa el colapso entre hermanos (overflow: auto; tampoco). Comprobé que se soluciona si usamos un display: grid; en el contenedor padre (body) */
+    margin-top: 40px;
+    background: #efe;
+}
+
+/*
+Sugerencia: crea un nuevo contexto de formato en .p2 (p.ej. display: flow-root) o evita colapso con overflow: auto en un contenedor
+*/

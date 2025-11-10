@@ -1,0 +1,21 @@
+.row {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.demo {
+    width: 300px;
+    padding: 20px;
+    border: 10px;
+    background: #ecfeff;
+    border: 10px solid #22d3ee;
+}
+
+.content-box {
+    box-sizing: content-box; /* Ya viene definido por defecto de forma implícita */
+}
+
+.border-box {
+    box-sizing: border-box;
+}

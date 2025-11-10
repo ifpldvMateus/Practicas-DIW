@@ -1,0 +1,17 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -8px; /* Compensación de márgenes */
+}
+
+.card {
+    border-radius: 8px;
+    width: calc(33.333% - 16px); /* calcula pensando en márgenes laterales de 8px */ /* Esto básicamente significa "3 elementos por fila + espacio reservado para márgenes (tratados como espacio externo)" (cada tarjeta ocupa 1/3 del body) */
+    min-height: 100px;
+    background: #fff;
+
+    box-sizing: border-box;
+    padding: 60px; /* Podemos poner cualquier valor (sin pasarnos, claro) sin romper la distribución de 3 tarjetas por fila, gracias al box-sizing: border-box. Así es más cómodo trabajar en un layout */
+    border: 1px solid black; /* Podemos poner cualquier valor también */
+    margin: 8px; /* Si ponemos un px más, el tercer elemento de la fila no va a caber */
+}

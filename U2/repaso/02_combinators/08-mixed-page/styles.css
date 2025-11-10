@@ -1,0 +1,25 @@
+/* Objetivos:
+   - Resaltar todos los p dentro de .content -> color #111827
+   - Borde solo a h2 hijos directos de .content -> 2px solid #93c5fd
+   - Cambiar color del primer p tras cualquier h2 -> #16a34a
+   - Poner cursiva a todos los p que siguen a un h2 -> color #6b7280 + italic
+*/
+
+/* Las reglas están ordenadas así para especificar preferencias y evitar ciertos conflictos */
+
+.content > h2 {
+   border: 2px solid #93c5fd;
+}
+
+.content p {
+   color: #111827;
+}
+
+h2 ~ p {
+   color: #6b7280; /* Este color nunca se aplica porque tiene menos especificidad que la regla anterior, con quien está en conflicto */
+   font-style: italic;
+}
+
+h2 + p {
+   color: #16a34a;
+}

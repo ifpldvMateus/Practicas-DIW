@@ -1,0 +1,17 @@
+body {
+    background: #fafafa;
+    padding: 20px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd; 
+
+    padding: 30px;
+    margin-bottom: 24px;
+}
+
+/*
+- El padding define espacio interno que aleja el borde del contenido interno
+- El margin define espacio externo que separa al elemento de otros elementos externos
+*/

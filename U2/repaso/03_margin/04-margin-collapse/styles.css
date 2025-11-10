@@ -1,0 +1,24 @@
+/* 
+Creo que no es posible romper el colapso de márgenes y mantener 40px entre los párrafos sin modificar los margin. Romper el colapso de márgenes implica que entre los párrafos haya 70px
+
+Podemos romper el colapso de márgenes usando ciertos modos de display en el contenedor padre
+*/
+
+
+body {
+    max-width: 60ch;
+    margin: 40px auto;
+    line-height: 1.5;
+
+    /* display: grid; */ 
+}
+
+.p1 {
+    margin-bottom: 30px;
+    background:#eef;
+}
+
+.p2 {
+    margin-top: 40px;
+    background: #efe;
+}

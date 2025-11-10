@@ -1,0 +1,27 @@
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+ul.menu a {
+    color: purple;
+    font-weight: bold;
+}
+
+ul.menu ul a {
+    color: magenta;
+    font-weight: normal;
+}
+
+/* 
+Otra forma que se me ocurrió:
+
+ul.menu > li > a {
+    font-weight: bold;
+    color: purple;
+}
+
+ul.menu ul a {
+    color: magenta;
+}
+*/

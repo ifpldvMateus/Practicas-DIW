@@ -1,0 +1,22 @@
+.caja {
+    width: 200px;
+    background: #e2e8f0;
+    border: 1px solid #94a3b8;
+    display: inline-block;
+    margin: 8px;
+}
+
+.a {
+    padding: 20px;
+}
+
+/* Los márgenes de abajo tendrán prioridad sobre el definido en .caja, ya que fueron definidos últimos */
+
+.b {
+    margin: 20px;
+}
+
+.c {
+    padding: 20px;
+    margin: 20px;
+}

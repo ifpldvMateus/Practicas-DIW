@@ -1,0 +1,17 @@
+/* Reglas:
+   - .card a (descendant): azul
+   - .card > a (child): verde
+   - .card h3 ~ p (general sibling): gris
+*/
+
+.card a {
+   color: #007786;
+}
+
+.card > a {
+   color: green;
+}
+
+.card h3 ~ p {
+   color: gray;
+}

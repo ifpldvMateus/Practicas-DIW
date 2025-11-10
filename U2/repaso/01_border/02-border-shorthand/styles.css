@@ -1,0 +1,19 @@
+.box {
+    width: 140px;
+    height: 60px;
+    display: grid;
+    place-items: center;
+    margin: 10px 0;
+}
+
+.box.one {
+    border: 1px groove red;
+}
+
+.box.two {
+    border: 6px dashed green;
+}
+
+.box.three {
+    border: 10px double blue;
+}

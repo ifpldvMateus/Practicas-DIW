@@ -1,0 +1,15 @@
+.btn {
+    padding: 10px 16px;
+    background: #111827;
+    color: #fff;
+
+    border: 3px solid transparent;
+}
+
+.btn:hover {
+    border-color: magenta;
+}
+
+/*
+El problema mencionado sólo aparece si definimos en el hover el ancho de un borde que no estaba definido previamente. Se agregarían píxeles que darían un efecto de desplazamiento del contenido
+*/
