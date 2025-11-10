@@ -1,0 +1,5 @@
+/* Objetivo: solo .resaltar::selection -> background:#fde68a; color:#111827; */
+.resaltar::selection {
+    background: #fde68a;
+    color: #111827;
+}

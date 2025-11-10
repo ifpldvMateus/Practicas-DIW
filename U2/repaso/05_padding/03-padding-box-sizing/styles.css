@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.demo {
+    width: 200px;
+    background: #ecfeff;
+    border: 2px solid #06b6d4;
+}
+
+.no-bs {
+    padding: 20px;
+}
+
+.bs {
+    box-sizing: border-box;
+    padding: 20px;
+}

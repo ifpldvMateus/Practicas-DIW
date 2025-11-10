@@ -1,0 +1,34 @@
+input {
+    display: block;
+    margin: 8px 0;
+    padding: 8px;
+    border: 1px solid #d1d5db;
+}
+
+/* Objetivo:
+    - :required borde azul
+    - :optional borde gris
+    - :valid borde verde
+    - :invalid borde rojo
+    - :disabled fondo gris claro
+*/
+
+input:required {
+    border-color: blue;
+}
+
+input:optional {
+    border-color: gray;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:disabled {
+    background-color: lightgrey;
+}

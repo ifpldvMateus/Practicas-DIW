@@ -1,0 +1,17 @@
+.card {
+    position: relative;
+    padding: 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+}
+
+/* Objetivo: .card::before crea una etiqueta "Nuevo" en la esquina sup-izq: */
+.card::before {
+    content: "Nuevo";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    color: red;
+    font-weight: bold;
+    padding: 4px 8px;
+}

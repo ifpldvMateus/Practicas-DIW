@@ -1,0 +1,22 @@
+/* Objetivo:
+    - En :focus, añade un contorno (outline) base.
+    - En :focus-visible, mejora la accesibilidad con un contorno más evidente.
+*/
+
+button {
+    padding: 8px 16px;
+    border: 1px solid gray;
+    margin: 0 10px;
+}
+
+/* :focus se aplica cuando el elemento recibe foco, sin importar cómo (clic, teclado...) */
+input:focus, button:focus {
+    outline: 2px solid #62a5f7;
+    outline-offset: 2px;
+}
+
+/* :focus-visible se activa solo cuando el foco es visible (por teclado; por ejemplo, cuando el usuario navega entre los elementos de la página con TAB) */
+input:focus-visible, button:focus-visible {
+    outline: 4px solid #2161ec;
+    outline-offset: 4px;
+}

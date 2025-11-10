@@ -1,0 +1,20 @@
+.hero {
+    background: #eef2ff;
+    border: 1px solid #c7d2fe;
+
+    padding: 8px; /* Padding base para móvil */
+}
+
+/* Tablet: entre 768px y 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero {
+        padding: 24px;
+    }
+}
+
+/* Escritorio: 992px en adelante */
+@media (min-width: 992px) {
+    .hero {
+        padding: 48px;
+    }
+}

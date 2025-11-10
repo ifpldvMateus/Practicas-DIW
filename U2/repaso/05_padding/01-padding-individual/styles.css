@@ -1,0 +1,17 @@
+body {
+    font-family: system-ui, sans-serif;
+}
+
+.box {
+    display: inline-block;
+    background: #e0f2fe;
+    margin: 8px;
+    border: 1px solid #93c5fd;
+}
+
+.uno, .dos, .tres { /* Estas clases no hacen falta... */
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+}

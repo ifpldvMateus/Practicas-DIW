@@ -1,0 +1,21 @@
+/* Objetivo:
+    - Resetea un contador en .seccion (counter-reset: temas)
+    - Incrementa en cada h3 (counter-increment: temas)
+    - h3::before muestra el número: "1. ", "2. ", ...
+*/
+
+/* Reseteamos el contador al inicio de la sección */
+.seccion {
+    counter-reset: temas; /* "temas" es el nombre del contador */
+}
+
+/* Incrementamos el contador en cada h3 */
+.seccion h3 {
+    counter-increment: temas;
+}
+
+.seccion h3::before {
+    content: counter(temas) ". "; /* Muestra el número seguido de punto y espacio */
+    font-weight: bold;
+    margin-right: 4px;
+}

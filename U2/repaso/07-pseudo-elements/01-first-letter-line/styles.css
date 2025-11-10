@@ -1,0 +1,19 @@
+.texto {
+    max-width: 60ch;
+    line-height: 1.6;
+}
+
+.texto {
+    max-width: 60ch;
+    line-height: 1.6;
+}
+
+.texto::first-letter {
+    font-size: 3em;
+    color: red;
+}
+
+.texto::first-line {
+    font-style: italic;
+    color: blue;
+}

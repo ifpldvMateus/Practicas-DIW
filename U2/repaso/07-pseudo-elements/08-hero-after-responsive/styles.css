@@ -1,0 +1,39 @@
+.hero {
+    position: relative;
+    background: #eef2ff;
+    padding: 48px 24px;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    background: lightpink;
+    border-radius: 50%;
+
+    /* Valores base para móvil */
+    width: 100px;
+    height: 100px;
+    top: -20px;
+    right: -20px;
+}
+
+/* Tablet: entre 768px y 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero::after {
+        width: 140px;
+        height: 140px;
+        top: -40px;
+        right: -40px;
+    }
+}
+
+/* Escritorio: 992px en adelante */
+@media (min-width: 992px) {
+    .hero::after {
+        width: 180px;
+        height: 180px;
+        top: -60px;
+        right: -60px;
+    }
+}

@@ -1,0 +1,18 @@
+.features {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    padding-left: 24px;
+    position: relative;
+    margin: 8px 0;
+}
+
+.features li::before {
+    content: "✔";
+    color: green;
+    position: absolute;
+    left: 0;
+    top: 0;
+}

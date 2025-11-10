@@ -1,0 +1,8 @@
+.detalles {
+    display: none;
+}
+
+/* Objetivo: cuando #chk esté :checked, mostrar .detalles usando un combinador adecuado */
+#chk:checked ~ .detalles {
+    display: block;
+}

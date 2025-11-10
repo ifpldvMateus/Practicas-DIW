@@ -1,0 +1,16 @@
+.titulo {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.titulo::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    /* Debemos usar un método alternativo para centrar elementos absolutamente posicionados */
+    left: 50%; /* Coloca el inicio (el borde izquierdo) del pseudoelemento justo en la mitad del contenedor */
+    transform: translateX(-50%); /* Mueve el pseudoelemento hacia la izquierda la mitad de su propio ancho. Como fue centrado por su inicio y no por su centro, debemos atrasarlo esa distancia para centrarlo perfecto */
+    width: 60px; /* Ancho del subrayado */
+    height: 2px; /* Grosor de la línea */
+    background-color: red;
+}

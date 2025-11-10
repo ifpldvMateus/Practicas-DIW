@@ -1,0 +1,25 @@
+.card {
+    border: 1px solid #e5e7eb;
+    padding: 12px;
+    margin: 8px 0;
+}
+
+.card:has(img) {
+    border-color: blue;
+}
+
+
+.form {
+    border: 1px solid #e5e7eb; /* Es necesario definir un borde base para que se muestre el rojo */
+    padding: 12px;
+    margin: 8px 0;
+}
+
+.form:has(input:invalid) {
+    border-color: red;
+}
+
+/* Objetivo:
+    - Resaltar .card que :has(img) con un borde azul
+    - Resaltar .form que :has(input:invalid) con un borde rojo (cuando el email no sea válido)
+*/

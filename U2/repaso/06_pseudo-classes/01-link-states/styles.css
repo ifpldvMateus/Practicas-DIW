@@ -1,0 +1,26 @@
+/* 
+Objetivo: aplica colores distintos a :link (azul), :visited (morado), :hover (subrayado), :active (rojo).
+Recuerda el orden recomendado: :link, :visited, :hover, :active
+*/
+
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+}
+
+
+/*
+El orden importa, porque los selectores posteriores pueden sobreescribir a los anteriores (por cascada). De otra forma, ciertas propiedades podrían nunca aplicarse
+*/

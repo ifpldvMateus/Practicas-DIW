@@ -1,0 +1,19 @@
+.btn {
+    background: #1f2937;
+    color: #fff;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.sm {
+    padding: 4px 12px;
+}
+
+.md {
+    padding: 8px 20px;
+}
+
+.lg {
+    padding: 12px 28px;
+}
