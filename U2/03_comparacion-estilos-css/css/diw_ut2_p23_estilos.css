@@ -1,4 +1,3 @@
-
 :root {
     --primario: #0d47a1;
     --acento: #c62828;
@@ -32,7 +31,7 @@ body {
     margin: 14px 0;
 }
 
-.tarjeta_destacado {
+.destacado {
     background: #e8f0fe;
 }
 
@@ -47,16 +46,16 @@ body {
     margin-bottom: .35rem;
 }
 
-.item_importante {
+.importante {
     color: var(--acento);
     font-weight: 700;
 }
 
 /* Ejemplo de especificidad */
-.tarjeta .item_importante {
+.tarjeta .importante {
     text-decoration: underline;
 }
 
-#contenido .item_importante {
+#contenido .importante {
     letter-spacing: .5px;
 }
